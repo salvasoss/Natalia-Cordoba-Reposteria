@@ -8,19 +8,31 @@ body {
     background-image: url(../images/fondo.png);
 }
 
-.margin-img {
+.margin-img-footer {
     margin-left: 2rem;
 }
 
-nav {
+.nav-color {
     background-color: rgb(243, 140, 234);
 }
 
 
+.navbar-changes li {
+    margin-left: 10px;
+}
+.navbar-changes li a {
+    color: black;
+}
+
+.navbar-changes li a:hover {
+    text-decoration: underline;
+    color: white;
+    transition: all .3s;
+}
+
 header {
     position: sticky;
     top: 0;
-    width: 100%;
     overflow: hidden;
     z-index: 9999;
 }
@@ -35,13 +47,6 @@ header {
 
 .li-brand {         
     font-size: 25px;
-}
-
-
-.item-hover:hover {
-    text-decoration: underline;
-    color: #000000;
-    font-weight: bold;
 }
 
 
@@ -131,4 +136,35 @@ header {
 }
 
 
+
+
+@media only screen and (max-width : 900px) {
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 2vw;
+    }
+    .productos img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; 
+    }
+    .productos {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px black solid;
+    }
+    .productos div {
+        align-self: center;
+        text-align: center;
+        padding: 3vw;
+        box-sizing: border-box;
+        
+    }
+    .nigga {
+        display: flex;
+        justify-content: center;
+    }
+}
 
