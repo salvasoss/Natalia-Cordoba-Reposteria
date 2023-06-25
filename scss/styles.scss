@@ -1,0 +1,370 @@
+@import "productos";
+@import "contacto";
+@import "servicios";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mali', cursive;
+}
+
+body {
+    background-image: url(../images/fondo.png);
+}
+
+//  NAVBAR
+.web-title {
+    padding-top: 4vw;
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 200;
+    }
+}
+
+.margin-img-footer {
+    margin-left: 2rem;
+}
+
+
+.navbar-margin {
+    li {
+        margin-left: 10px;
+
+        a {
+            color: #000000;
+        }
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.nav-color {
+    background-color: #f38cea;
+}
+
+.navbar-logo {
+    margin-left: 2vw;
+    font-family: 'Leckerli One', cursive;
+    color: #000000;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar-move_right {
+    display: flex;
+    justify-content: right;
+}
+
+.li-decoration {
+    font-size: 1.1rem;
+
+    a {
+        transition: all 0.7s;
+
+        &:hover {
+            color: #fff;
+            z-index: 1;
+            text-decoration: underline;
+        }
+
+    }
+}
+
+
+// INDEX 
+
+.carrousel_size {
+    width: 100%;
+    height: 46vw;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.grid-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding: 4vw 5vw 5vw 5vw;
+}
+
+.img-container_index {
+    position: relative;
+    height: 40vw;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.2s ease;
+    background-color: #ffc0cb;
+
+    &:hover {
+        opacity: 1;
+        border-radius: 20px;
+    }
+}
+
+.img-container__text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text--link {
+    font-weight: bold;
+    font-size: 2rem;
+
+    &:hover {
+        font-size: 3rem;
+    }
+}
+
+// PRODUCTOS
+.productos-webtitle {
+    text-align: center;
+    margin-top: 2vw;
+    text-decoration: underline;
+}
+
+@keyframes identifier {}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 2vw;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    div {
+        align-self: center;
+        text-align: center;
+        padding: 3vw;
+        box-sizing: border-box;
+    }
+}
+
+// CONTACTO
+.contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contact-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #f053e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 35%;
+
+    &:hover {
+        background-color: #ee69e3;
+    }
+}
+
+.contact-img {
+    width: 50%;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+.contact-map {
+    display: flex;
+    justify-content: center;
+}
+
+// servicios
+
+.grid-gallery_servicios {
+    display: grid;
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: repeat(4,25vw);
+    grid-gap: .5vw;
+    grid-template-areas: 
+    "a a b b"
+    "a a d d"
+    "e e d d"
+    "c c c c";
+
+    .gallery-item1 {
+        grid-area: a;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gallery-item2 {
+        grid-area: b;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gallery-item3{
+        grid-area: c;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gallery-item4{
+        grid-area: d;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .gallery-item5{
+        grid-area: e;
+        img {
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.servicios-webtitle {
+    text-align: center;
+    padding: 2vw 0 2vw 0 ;
+    h1 {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .grid-index {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-container_index {
+        height: 60vw;
+    }
+
+    .contact-img {
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .text--link {
+        font-weight: bold;
+        font-size: 2rem;
+
+        &:hover {
+            font-size: 2.5rem;
+        }
+    }
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 2vw;
+    }
+
+    .productos {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px #000000 solid;
+    }
+
+    .carrousel_size {
+        height: 70vw;
+    }
+}
+
+
+
+@media screen and (max-width : 500px) {
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+
+    .carrousel_size {
+        height: 90vw;
+    }
+}
