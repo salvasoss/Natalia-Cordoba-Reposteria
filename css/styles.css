@@ -9,18 +9,6 @@ body {
   background-image: url(../images/fondo.png);
 }
 
-.web-title {
-  padding-top: 4vw;
-}
-.web-title h1 {
-  text-align: center;
-  text-decoration: underline;
-}
-.web-title h3 {
-  text-align: center;
-  font-weight: 200;
-}
-
 .margin-img-footer {
   margin-left: 2rem;
 }
@@ -131,6 +119,23 @@ header {
 }
 .text--link:hover {
   font-size: 3rem;
+}
+
+.web-title {
+  background: #ffe2e2;
+  background: linear-gradient(94deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
+  height: 8vw;
+}
+.web-title h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 1vw;
+  font-size: 3vw;
+}
+.web-title h3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2vw;
 }
 
 .productos-webtitle {
@@ -268,6 +273,39 @@ input[type=submit]:hover {
 }
 .servicios-webtitle h1 {
   text-decoration: underline;
+  font-size: 3rem;
+}
+
+.span-mesasdulces {
+  background: rgb(255, 226, 226);
+  background: linear-gradient(90deg, rgb(255, 226, 226) 4%, rgb(252, 102, 231) 30%, rgb(250, 0, 206) 50%, rgb(252, 102, 231) 70%, rgb(255, 226, 226) 98%);
+  margin-bottom: 1vw;
+}
+.span-mesasdulces h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  animation-name: loop;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: infinite;
+}
+
+.span-cursodecocina {
+  background: rgb(255, 0, 206);
+  background: linear-gradient(94deg, rgb(255, 0, 206) 10%, rgb(255, 102, 234) 30%, rgb(255, 222, 249) 50%, rgb(255, 102, 234) 70%, rgb(255, 0, 206) 90%);
+  margin-top: 1vw;
+}
+.span-cursodecocina h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  animation: drift 10s 2s linear infinite;
+}
+
+.servicios-cards-flex {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 1024px) {
@@ -318,6 +356,12 @@ input[type=submit]:hover {
   }
   .carrousel_size {
     height: 90vw;
+  }
+  .img-container_index {
+    height: 85vw;
+  }
+  .img-container__text {
+    font-size: 1.2rem;
   }
 }
 
