@@ -5,6 +5,14 @@
   font-family: "Mali", cursive;
 }
 
+@keyframes loop {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 body {
   background-image: url(../images/fondo.png);
 }
@@ -125,11 +133,15 @@ header {
   background: #ffe2e2;
   background: linear-gradient(94deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
   height: 8vw;
+  display: flex;
+  justify-content: center;
+}
+.web-title div {
+  margin: 0.5vw;
 }
 .web-title h1 {
   text-align: center;
   text-decoration: underline;
-  padding-top: 1vw;
   font-size: 3vw;
 }
 .web-title h3 {
@@ -273,34 +285,32 @@ input[type=submit]:hover {
 }
 .servicios-webtitle h1 {
   text-decoration: underline;
-  font-size: 3rem;
+  font-size: 2.5vw;
 }
 
 .span-mesasdulces {
-  background: rgb(255, 226, 226);
-  background: linear-gradient(90deg, rgb(255, 226, 226) 4%, rgb(252, 102, 231) 30%, rgb(250, 0, 206) 50%, rgb(252, 102, 231) 70%, rgb(255, 226, 226) 98%);
+  background: #ffe2e2;
+  background: linear-gradient(90deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
   overflow: hidden;
-  margin-bottom: 1vw;
+  margin: 1vw 0 1vw 0;
+  height: 4vw;
 }
 .span-mesasdulces h2 {
-  text-align: center;
+  vertical-align: middle;
   font-size: 2vw;
   font-weight: bolder;
   animation: loop 10s linear infinite;
   overflow: hidden;
 }
 
-@keyframes loop {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.card-title {
+  text-align: center;
 }
+
 .servicios-cards-flex {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 1vw;
 }
 
 @media screen and (max-width: 1024px) {
