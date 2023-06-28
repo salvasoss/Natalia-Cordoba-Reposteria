@@ -17,6 +17,27 @@ body {
   background-image: url(../images/fondo.png);
 }
 
+.redes-fixed {
+  position: absolute;
+  z-index: 10000000000000;
+  top: 83%;
+  left: 97%;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-fixed__fixed {
+  position: fixed;
+}
+
+.fixed-elements {
+  padding-bottom: 0.2vw;
+}
+.fixed-elements img:hover {
+  width: 3vw;
+  height: 3vw;
+}
+
 .margin-img-footer {
   margin-left: 4vw;
 }
@@ -53,15 +74,14 @@ header {
 }
 
 .li-decoration {
-  font-size: 1.1rem;
+  font-size: 1vw;
 }
 .li-decoration a {
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 .li-decoration a:hover {
-  color: #fff;
+  font-size: 1.2vw;
   z-index: 1;
-  text-decoration: underline;
 }
 
 .carrousel_size {
@@ -182,7 +202,17 @@ header {
 
 .contact-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.contact-img {
+  width: 50%;
+  height: auto;
+}
+.contact-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-form {
@@ -202,6 +232,9 @@ header {
   border-radius: 4px;
   box-sizing: border-box;
 }
+.inputs-form:focus {
+  background-color: #fff3fe;
+}
 
 input[type=submit] {
   background-color: #f053e3;
@@ -213,22 +246,31 @@ input[type=submit] {
   margin-left: 35%;
 }
 input[type=submit]:hover {
-  background-color: #ee69e3;
+  background-color: #e670dc;
+  font-size: 20px;
 }
 
-.contact-img {
-  width: 50%;
+.contact-title {
+  background: #ffd2f7;
+  background: #ff64e3;
+  background: linear-gradient(100deg, #ff64e3 9%, #ff87e9 28%, #ffe3fa 50%, #ff87e9 72%, #ff64e3 91%);
+  height: 2.5vw;
 }
-.contact-img img {
-  object-fit: cover;
+.contact-title h2 {
+  text-align: center;
+  top: 1vw;
+  text-decoration: underline;
+  font-size: 2vw;
+}
+
+.map-contact {
+  width: 100%;
+  height: 50vw;
+}
+.map-contact iframe {
+  object-fit: fill;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
-}
-
-.contact-map {
-  display: flex;
-  justify-content: center;
 }
 
 .grid-gallery_servicios {
@@ -293,10 +335,9 @@ input[type=submit]:hover {
   background: linear-gradient(90deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
   overflow: hidden;
   margin: 1vw 0 1vw 0;
-  height: 4vw;
 }
 .span-mesasdulces h2 {
-  vertical-align: middle;
+  top: 0.5vw;
   font-size: 2vw;
   font-weight: bolder;
   animation: loop 10s linear infinite;
@@ -329,7 +370,14 @@ input[type=submit]:hover {
     flex-wrap: wrap;
   }
   .contact-form {
-    margin-bottom: 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .contact-form h1 {
+    font-size: 4vw;
+  }
+  .contact-title h2 {
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 921px) {
@@ -358,6 +406,20 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
   }
+  .span-mesasdulces {
+    height: 5vw;
+  }
+  .span-mesasdulces h2 {
+    font-size: 2.5vw;
+  }
+  .servicios-cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vw 0 2vw 0;
+  }
+  .card {
+    margin-bottom: 4vw;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar-logo {
@@ -385,6 +447,33 @@ input[type=submit]:hover {
   }
   .web-title h3 {
     font-size: 3vw;
+  }
+  .span-mesasdulces {
+    height: 6vw;
+  }
+  .span-mesasdulces h2 {
+    font-size: 3vw;
+  }
+  .servicios-webtitle h1 {
+    font-size: 5vw;
+  }
+  .grid-gallery_servicios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .servicios-cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vw 0 2vw 0;
+  }
+  .card {
+    margin-bottom: 4vw;
+  }
+  .contact-title {
+    height: 7vw;
+  }
+  .contact-title h2 {
+    font-size: 5vw;
   }
 }
 
