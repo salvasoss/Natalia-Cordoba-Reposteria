@@ -26,13 +26,13 @@ body {
 
 //  NAVBAR
 .margin-img-footer {
-    margin-left: 2rem;
+    margin-left: 4vw;
 }
 
 
 .navbar-margin {
     li {
-        margin-left: 10px;
+        margin-left: 1vw;
 
         a {
             color: #000000;
@@ -88,7 +88,7 @@ header {
     height: 46vw;
 
     img {
-        object-fit: cover;
+        object-fit: fill;
         width: 100%;
         height: 100%;
     }
@@ -97,8 +97,8 @@ header {
 .grid-index {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-    padding: 4vw 5vw 5vw 5vw;
+    grid-gap: 3vw;
+    padding: 0 5vw 5vw 5vw;
 }
 
 .img-container_index {
@@ -158,9 +158,10 @@ header {
     height: 8vw;
     display: flex;
     justify-content: center;
-    div{
-        margin: 0.5vw
-    }
+    margin-bottom: 3vw;
+    display: flex;
+        align-items: center;
+    
     h1 {
         text-align: center;
         text-decoration: underline;
@@ -378,7 +379,7 @@ input[type="submit"] {
     }
 }
 
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 921px) {
     .text--link {
         font-weight: bold;
         font-size: 2rem;
@@ -404,6 +405,11 @@ input[type="submit"] {
     .carrousel_size {
         height: 70vw;
     }
+    .navbar-move_right {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 
@@ -424,5 +430,20 @@ input[type="submit"] {
     .img-container__text{
         font-size: 1.2rem;
     }
-
+    .grid-index{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .web-title {
+        height: 13vw;
+        margin-bottom: 4vw;
+        h1 {
+            font-size: 5vw;
+        }
+    
+        h3 {
+            font-size: 3vw;
+        }
+    }
 }
+
