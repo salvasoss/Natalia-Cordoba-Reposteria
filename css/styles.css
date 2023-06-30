@@ -126,11 +126,11 @@ header {
 }
 
 .carrousel_size {
-  width: 100%;
-  height: 46vw;
+  height: 100%;
+  width: 46vw;
 }
 .carrousel_size img {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -207,7 +207,6 @@ header {
 }
 .web-title h3 {
   text-align: center;
-  font-weight: 200;
   font-size: 2vw;
 }
 
@@ -217,7 +216,6 @@ header {
   text-decoration: underline;
 }
 
-@keyframes identifier {}
 .grid-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -247,8 +245,8 @@ header {
 }
 
 .contact-img {
-  width: 50%;
-  height: auto;
+  height: 50%;
+  width: auto;
 }
 .contact-img img {
   object-fit: cover;
@@ -278,7 +276,7 @@ header {
 }
 
 input[type=submit] {
-  background-color: #f053e3;
+  background-color: #f38cea;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -305,11 +303,11 @@ input[type=submit]:hover {
 }
 
 .map-contact {
-  width: 100%;
-  height: 50vw;
+  height: 100%;
+  width: 50vw;
 }
 .map-contact iframe {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -357,7 +355,7 @@ input[type=submit]:hover {
   grid-area: e;
 }
 .grid-gallery_servicios .gallery-item5 img {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -393,6 +391,11 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 1vw;
+}
+
+.nosotros-title {
+  text-align: center;
+  background-color: #fff8e7;
 }
 
 @media screen and (max-width: 1024px) {
