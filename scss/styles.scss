@@ -40,7 +40,7 @@ body {
 .sidebar {
 	position: fixed;
 	width: 70px;
-	margin-top: 550px;
+	padding-top: 550px;
 	transition: all 0.3s linear;
     z-index: 999;
     
@@ -97,8 +97,7 @@ body {
 		
 	}
 }
-.sidebar-ul {
-    
+.sidebar-ul{
 	li {
 		a {
 			span {
@@ -179,7 +178,7 @@ header {
 
 
 .carrousel_size {
-    @include sizes (46vw,100%);
+    @include sizes (100%,93vh);
 
     img {
         @include image-center;
@@ -244,7 +243,13 @@ header {
 
 .web-title {
     background: #ffe2e2;
-    background: linear-gradient(94deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
+    background: 
+    linear-gradient(94deg,
+     #ffe2e2 4%,
+      #fc66e7 30%,
+       #fa00ce 50%,
+        #fc66e7 70%,
+         #ffe2e2 98%);
     height: 8vw;
     display: flex;
     justify-content: center;
@@ -301,7 +306,7 @@ header {
 }
 
 .contact-img {
-    @include sizes (auto,50%);
+    @include sizes (50%, 70vh);
 
     img {
         @include image-center;
@@ -315,6 +320,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1{
+        height: 7vh;
+    }
 }
 
 .inputs-form {
@@ -349,18 +357,18 @@ input[type="submit"] {
     background: #ffd2f7;
     background: #ff64e3;
     background: linear-gradient(100deg, #ff64e3 9%, #ff87e9 28%, #ffe3fa 50%, #ff87e9 72%, #ff64e3 91%);
-    height: 2.5vw;
+    height: 5vh;
 
     h2 {
         text-align: center;
         top: 1vw;
         text-decoration: underline;
-        font-size: 2vw;
+        font-size: 3vh;
     }
 }
 
 .map-contact {
-    @include sizes(50vw,100%);
+    @include sizes(100%,70vh);
 
     iframe {
         @include image-center;
@@ -480,6 +488,8 @@ input[type="submit"] {
 
     .contact-img {
         width: 100%;
+        height: 60vh;
+        @include image-center()
     }
 
     .contact-container {
@@ -490,15 +500,12 @@ input[type="submit"] {
     .contact-form {
         margin-top: 5vw;
         margin-bottom: 5vw;
-
-        h1 {
-            font-size: 4vw;
-        }
     }
 
     .contact-title {
+        height: 7vh;
         h2 {
-            font-size: 3vw;
+            font-size: 4vh;
         }
     }
 }
@@ -621,10 +628,17 @@ input[type="submit"] {
     }
 
     .contact-title {
-        height: 7vw;
+        height: 10vw;
 
         h2 {
-            font-size: 5vw;
+            font-size: 7vw;
+        }
+    }
+    .contact-form {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        h1{
+            font-size: 5vh;
         }
     }
 
