@@ -112,6 +112,7 @@ header {
 .navbar-move_right {
   display: flex;
   justify-content: right;
+  transition: all 0.5s;
 }
 
 .li-decoration {
@@ -369,21 +370,29 @@ input[type=submit]:hover {
 }
 .servicios-webtitle h1 {
   text-decoration: underline;
-  font-size: 2.5vw;
+  font-size: 5vh;
 }
 
-.span-mesasdulces {
+.servicios-loop {
   background: #ffe2e2;
   background: linear-gradient(90deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
   overflow: hidden;
   margin: 1vw 0 1vw 0;
 }
-.span-mesasdulces h2 {
-  top: 0.5vw;
-  font-size: 2vw;
+.servicios-loop h2 {
+  font-size: 4vh;
   font-weight: bolder;
   animation: loop 10s linear infinite;
   overflow: hidden;
+}
+
+.card {
+  box-shadow: 4px 4px 21px -4px rgb(0, 0, 0);
+}
+
+.card-img-top {
+  height: 22vh;
+  width: 100%;
 }
 
 .card-title {
@@ -398,7 +407,7 @@ input[type=submit]:hover {
 
 .nosotros-title {
   text-align: center;
-  background-color: #fff8e7;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -427,12 +436,6 @@ input[type=submit]:hover {
     margin-top: 5vw;
     margin-bottom: 5vw;
   }
-  .contact-title {
-    height: 7vh;
-  }
-  .contact-title h2 {
-    font-size: 4vh;
-  }
 }
 @media screen and (max-width: 921px) {
   .text--link {
@@ -459,12 +462,6 @@ input[type=submit]:hover {
   .navbar-move_right {
     display: flex;
     justify-content: center;
-  }
-  .span-mesasdulces {
-    height: 5vw;
-  }
-  .span-mesasdulces h2 {
-    font-size: 2.5vw;
   }
   .servicios-cards-flex {
     display: flex;
@@ -502,15 +499,6 @@ input[type=submit]:hover {
   .web-title h3 {
     font-size: 3vw;
   }
-  .span-mesasdulces {
-    height: 6vw;
-  }
-  .span-mesasdulces h2 {
-    font-size: 3vw;
-  }
-  .servicios-webtitle h1 {
-    font-size: 5vw;
-  }
   .grid-gallery_servicios {
     display: flex;
     flex-wrap: wrap;
@@ -522,12 +510,6 @@ input[type=submit]:hover {
   }
   .card {
     margin-bottom: 4vw;
-  }
-  .contact-title {
-    height: 10vw;
-  }
-  .contact-title h2 {
-    font-size: 7vw;
   }
   .contact-form {
     margin-left: 4vw;
