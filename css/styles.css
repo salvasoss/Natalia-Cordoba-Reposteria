@@ -410,6 +410,40 @@ input[type=submit]:hover {
   text-decoration: underline;
 }
 
+.gridnosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.gridnosotros-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.gridnosotros-img img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.gridnosotros-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.gridnosotros-content div {
+  width: 35vw;
+}
+.gridnosotros-content h2 {
+  text-align: center;
+  font-size: 5vh;
+  font-weight: 600;
+}
+.gridnosotros-content p {
+  font-size: 2vh;
+}
+
 @media screen and (max-width: 1024px) {
   .sidebar {
     display: none;
@@ -444,6 +478,17 @@ input[type=submit]:hover {
   }
   .text--link:hover {
     font-size: 2.5rem;
+  }
+  .gridnosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .gridnosotros-content {
+    border: #000000 1px solid;
+  }
+  .gridnosotros-content div {
+    width: 60vw;
   }
   .grid-productos {
     display: grid;

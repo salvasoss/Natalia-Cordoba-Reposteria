@@ -1,6 +1,5 @@
-
 $color-pink: #f38cea;
- 
+
 @mixin image-center {
     object-fit: cover;
     width: 100%;
@@ -10,8 +9,8 @@ $color-pink: #f38cea;
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
- }
- 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,84 +37,94 @@ body {
 
 
 .sidebar {
-	position: fixed;
-	width: 70px;
-	padding-top: 550px;
-	transition: all 0.3s linear;
+    position: fixed;
+    width: 70px;
+    padding-top: 550px;
+    transition: all 0.3s linear;
     z-index: 999;
-    
-	li {
-		height: 60px;
-		position: relative;
-		a {
-			color: #ffffff;
-			display: block;
-			@include sizes (100%,100%);
-			line-height: 60px;
-			padding-left: 25%;
-			border-bottom: 1px solid rgba(0,0,0,.4);
-			transition: all .3s linear;
+
+    li {
+        height: 60px;
+        position: relative;
+
+        a {
+            color: #ffffff;
+            display: block;
+            @include sizes (100%, 100%);
+            line-height: 60px;
+            padding-left: 25%;
+            border-bottom: 1px solid rgba(0, 0, 0, .4);
+            transition: all .3s linear;
+
             &:hover {
                 z-index: 1;
                 width: 200px;
-                border-bottom: 1px solid rgba(0,0,0,.5);
-                box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+                border-bottom: 1px solid rgba(0, 0, 0, .5);
+                box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
             }
-			i {
-				position: absolute;
-				top: 17px;
-				left: 20px;
-				font-size: 27px;
-			}
-		}
-		&:nth-child(1) {
-			a {
-				background: #4267B2;
-			}
-		}
-		&:nth-child(2) {
-			a {
-				background: #1DA1F2;
-			}
-		}
-		&:nth-child(3) {
-			a {
-				background: #E1306C;
-			}
-		}
-		&:nth-child(4) {
-			a {
-				background: #333;
-			}
-		}
-		&:nth-child(5) {
-			a {
-				
+
+            i {
+                position: absolute;
+                top: 17px;
+                left: 20px;
+                font-size: 27px;
+            }
+        }
+
+        &:nth-child(1) {
+            a {
+                background: #4267B2;
+            }
+        }
+
+        &:nth-child(2) {
+            a {
+                background: #1DA1F2;
+            }
+        }
+
+        &:nth-child(3) {
+            a {
+                background: #E1306C;
+            }
+        }
+
+        &:nth-child(4) {
+            a {
+                background: #333;
+            }
+        }
+
+        &:nth-child(5) {
+            a {
+
                 background: #ff0000;
-			}
-		}
-		
-	}
+            }
+        }
+
+    }
 }
-.sidebar-ul{
-	li {
-		a {
-			span {
-				display: none;
-				font-weight: bold;
-				letter-spacing: 1px;
-				text-transform: uppercase;
-			}
-		}
-		&:hover {
-			a {
-				span {
-					padding-left: 30%;
-					display: block;
-				}
-			}
-		}
-	}
+
+.sidebar-ul {
+    li {
+        a {
+            span {
+                display: none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        &:hover {
+            a {
+                span {
+                    padding-left: 30%;
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 
@@ -179,7 +188,7 @@ header {
 
 
 .carrousel_size {
-    @include sizes (100%,93vh);
+    @include sizes (100%, 93vh);
 
     img {
         @include image-center;
@@ -210,7 +219,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    @include sizes (100%,100%);
+    @include sizes (100%, 100%);
     opacity: 0;
     transition: 1.2s ease;
     background-color: #ffc0cb;
@@ -244,13 +253,13 @@ header {
 
 .web-title {
     background: #ffe2e2;
-    background: 
-    linear-gradient(94deg,
-     #ffe2e2 4%,
-      #fc66e7 30%,
-       #fa00ce 50%,
-        #fc66e7 70%,
-         #ffe2e2 98%);
+    background:
+        linear-gradient(94deg,
+            #ffe2e2 4%,
+            #fc66e7 30%,
+            #fa00ce 50%,
+            #fc66e7 70%,
+            #ffe2e2 98%);
     height: 8vw;
     display: flex;
     justify-content: center;
@@ -321,7 +330,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
+
+    h1 {
         height: 7vh;
     }
 }
@@ -369,7 +379,7 @@ input[type="submit"] {
 }
 
 .map-contact {
-    @include sizes(100%,70vh);
+    @include sizes(100%, 70vh);
 
     iframe {
         @include image-center;
@@ -441,7 +451,7 @@ input[type="submit"] {
     }
 }
 
-.servicios-loop{
+.servicios-loop {
     background: #ffe2e2;
     background: linear-gradient(90deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
     overflow: hidden;
@@ -455,13 +465,14 @@ input[type="submit"] {
     }
 }
 
-.card{ 
-    box-shadow: 4px 4px 21px -4px rgba(0,0,0,1);
+.card {
+    box-shadow: 4px 4px 21px -4px rgba(0, 0, 0, 1);
 }
 
-.card-img-top{
-    @include sizes(100%,22vh )
+.card-img-top {
+    @include sizes(100%, 22vh)
 }
+
 .card-title {
     text-align: center;
 }
@@ -479,11 +490,50 @@ input[type="submit"] {
     text-decoration: underline;
 }
 
-@media screen and (max-width : 1024px) {
+.gridnosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+    .gridnosotros-img {
+        img {
+            @include image-center();
+            &:hover{
+                -webkit-transform:scale(1.1  );
+                transform:scale(1.1);
+                transition: all 1s;
+            }
+        }
+        }
     
-    .sidebar{
+
+    .gridnosotros-content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 35vw;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 5vh;
+            font-weight: 600;
+        }
+        p{
+            font-size: 2vh;
+        }
+    }
+
+
+
+@media screen and (max-width : 1024px) {
+
+    .sidebar {
         display: none;
     }
+
     .grid-index {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -521,6 +571,19 @@ input[type="submit"] {
         }
     }
 
+    .gridnosotros {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .gridnosotros-content {
+        border: #000000 1px solid;
+        div{
+            width: 60vw;
+        }
+    }
+    
     .grid-productos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -552,6 +615,7 @@ input[type="submit"] {
     .card {
         margin-bottom: 4vw;
     }
+
 }
 
 
@@ -609,7 +673,8 @@ input[type="submit"] {
     .contact-form {
         margin-left: 4vw;
         margin-right: 4vw;
-        h1{
+
+        h1 {
             font-size: 5vh;
         }
     }
