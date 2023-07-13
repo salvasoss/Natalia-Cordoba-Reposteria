@@ -83,10 +83,10 @@ body {
   margin-left: 4vw;
 }
 
-.navbar-margin li {
+.navbar-ul-margin li {
   margin-left: 1vw;
 }
-.navbar-margin li a {
+.navbar-ul-margin li a {
   color: #000000;
 }
 
@@ -183,32 +183,32 @@ header {
   text-align: center;
 }
 
-.text--link {
+.img-container__text--link h3 {
   font-weight: bold;
   font-size: 2rem;
 }
-.text--link:hover {
+.img-container__text--link h3:hover {
   font-size: 3rem;
 }
 
-.web-title {
+.index-web-title {
   background: #ffe2e2;
   background: linear-gradient(94deg, #ffe2e2 4%, #fc66e7 30%, #fa00ce 50%, #fc66e7 70%, #ffe2e2 98%);
-  height: 8vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   margin-bottom: 3vw;
   display: flex;
   align-items: center;
 }
-.web-title h1 {
+.index-web-title h1 {
   text-align: center;
   text-decoration: underline;
-  font-size: 3vw;
+  font-size: 4vh;
 }
-.web-title h3 {
+.index-web-title h2 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 2vh;
 }
 
 .productos-webtitle {
@@ -534,15 +534,11 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .web-title {
-    height: 13vw;
-    margin-bottom: 4vw;
-  }
   .web-title h1 {
-    font-size: 5vw;
+    font-size: 3vh;
   }
   .web-title h3 {
-    font-size: 3vw;
+    font-size: 1.5vh;
   }
   .grid-gallery_servicios {
     display: flex;

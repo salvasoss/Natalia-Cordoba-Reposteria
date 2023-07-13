@@ -134,7 +134,7 @@ body {
 }
 
 
-.navbar-margin {
+.navbar-ul-margin {
     li {
         margin-left: 1vw;
 
@@ -242,16 +242,19 @@ header {
     text-align: center;
 }
 
-.text--link {
-    font-weight: bold;
-    font-size: 2rem;
+.img-container__text--link {
+    h3 {
+        font-weight: bold;
+        font-size: 2rem;
 
-    &:hover {
-        font-size: 3rem;
+        &:hover {
+            font-size: 3rem;
+        }
     }
+
 }
 
-.web-title {
+.index-web-title {
     background: #ffe2e2;
     background:
         linear-gradient(94deg,
@@ -260,7 +263,7 @@ header {
             #fa00ce 50%,
             #fc66e7 70%,
             #ffe2e2 98%);
-    height: 8vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     margin-bottom: 3vw;
@@ -270,12 +273,12 @@ header {
     h1 {
         text-align: center;
         text-decoration: underline;
-        font-size: 3vw;
+        font-size: 4vh;
     }
 
-    h3 {
+    h2 {
         text-align: center;
-        font-size: 2vw;
+        font-size: 2vh;
     }
 }
 
@@ -496,35 +499,38 @@ input[type="submit"] {
     grid-template-rows: repeat(1, 1fr);
 }
 
-    .gridnosotros-img {
-        img {
-            @include image-center();
-            &:hover{
-                -webkit-transform:scale(1.1  );
-                transform:scale(1.1);
-                transition: all 1s;
-            }
-        }
-        }
-    
+.gridnosotros-img {
+    img {
+        @include image-center();
 
-    .gridnosotros-content {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        div{
-            width: 35vw;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 5vh;
-            font-weight: 600;
-        }
-        p{
-            font-size: 2vh;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 1s;
         }
     }
+}
+
+
+.gridnosotros-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 35vw;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 2vh;
+    }
+}
 
 
 
@@ -579,11 +585,12 @@ input[type="submit"] {
 
     .gridnosotros-content {
         border: #000000 1px solid;
-        div{
+
+        div {
             width: 60vw;
         }
     }
-    
+
     .grid-productos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -643,15 +650,12 @@ input[type="submit"] {
     }
 
     .web-title {
-        height: 13vw;
-        margin-bottom: 4vw;
-
         h1 {
-            font-size: 5vw;
+            font-size: 3vh;
         }
 
         h3 {
-            font-size: 3vw;
+            font-size: 1.5vh;
         }
     }
 
