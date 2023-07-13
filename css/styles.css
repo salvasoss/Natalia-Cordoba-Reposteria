@@ -534,10 +534,10 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .web-title h1 {
+  .index-web-title h1 {
     font-size: 3vh;
   }
-  .web-title h3 {
+  .index-web-title h3 {
     font-size: 1.5vh;
   }
   .grid-gallery_servicios {
